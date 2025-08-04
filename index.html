@@ -13,6 +13,22 @@
       text-align: center;
     }
 
+    nav {
+      background-color: #d52c2c;
+      padding: 10px 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
     h1 {
       color: #d52c2c;
       font-size: 3em;
@@ -68,6 +84,30 @@
       margin-bottom: 10px;
     }
 
+    .sources {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: left;
+    }
+
+    .sources h2 {
+      color: #d52c2c;
+    }
+
+    .sources ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sources li {
+      margin-bottom: 8px;
+    }
+
+    .sources a {
+      color: #d52c2c;
+    }
+
     @keyframes fadeInUp {
       0% {
         opacity: 0;
@@ -108,10 +148,16 @@
 </head>
 <body>
 
+  <nav>
+    <a href="#">Home</a>
+    <a href="#facts">Facts</a>
+    <a href="#sources">Sources</a>
+  </nav>
+
   <h1>😺 Curious Cat Facts</h1>
   <img src="https://cdn.pixabay.com/photo/2017/11/09/21/41/cat-2934720_960_720.jpg" alt="Cute Cat" class="main-cat" />
 
-  <div class="facts">
+  <div id="facts" class="facts">
     <div class="fact">
       <h3>Whisker Sensitivity</h3>
       <p>Cats use their whiskers to detect changes in the air and to sense nearby objects — even in complete darkness.</p>
@@ -148,6 +194,15 @@
       <h3>Acrobatic Falls</h3>
       <p>Cats have a unique righting reflex allowing them to land on their feet after falling from high places.</p>
     </div>
+  </div>
+
+  <div id="sources" class="sources">
+    <h2>Sources</h2>
+    <ul>
+      <li><a href="https://www.aspca.org" target="_blank">ASPCA - American Society for the Prevention of Cruelty to Animals</a></li>
+      <li><a href="https://www.petmd.com" target="_blank">PetMD - Cat Health Articles</a></li>
+      <li><a href="https://www.nationalgeographic.com/animals" target="_blank">National Geographic - Animal Facts</a></li>
+    </ul>
   </div>
 
 </body>
