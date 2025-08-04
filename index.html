@@ -17,7 +17,18 @@
       color: #d52c2c;
       font-size: 3em;
       margin-top: 20px;
+      position: relative;
       animation: bounceIn 1s ease;
+    }
+
+    h1::after {
+      content: "";
+      display: block;
+      height: 4px;
+      width: 120px;
+      background-color: #d52c2c;
+      margin: 10px auto 0;
+      border-radius: 4px;
     }
 
     img.main-cat {
@@ -30,21 +41,21 @@
     }
 
     .facts {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
       gap: 20px;
       padding: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
     }
 
     .fact {
       background: #fff;
       padding: 20px;
-      width: 300px;
       border-radius: 16px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
-      animation: fadeInUp 1s ease forwards;
+      animation: fadeInUp 0.8s ease forwards;
     }
 
     .fact:hover {
@@ -89,9 +100,6 @@
     }
 
     @media (max-width: 768px) {
-      .fact {
-        width: 90%;
-      }
       h1 {
         font-size: 2.2em;
       }
@@ -135,6 +143,10 @@
     <div class="fact">
       <h3>Toe Beans</h3>
       <p>The squishy pads on a cat's paws are called “toe beans” and are very sensitive.</p>
+    </div>
+    <div class="fact">
+      <h3>Acrobatic Falls</h3>
+      <p>Cats have a unique righting reflex allowing them to land on their feet after falling from high places.</p>
     </div>
   </div>
 
